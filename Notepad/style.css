@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.setup {
+    display: flex;
+    flex-direction: column;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+}
+
+.resetAndClear {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    font-family: Arial;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    font-size: 12px;
+}

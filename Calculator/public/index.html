@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="calculator">
+            <div id="result">
+                <p> <input type="text" id="output-result" maxlength="10"> </p>
+            </div>
+
+            <div id="typing-area">
+                <div>
+                    <button class="button" onclick="clearScreen()">C</button>
+                    <button class="button" onclick="backspace()">CE</button>
+                    <button class="button" onclick="placeNumb('%')">%</button>
+                    <button class="button" onclick="placeNumb('/')">/</button>
+                </div>
+
+                <div>
+                    <button class="button" onclick="placeNumb('7')">7</button>
+                    <button class="button" onclick="placeNumb('8')">8</button>
+                    <button class="button" onclick="placeNumb('9')">9</button>
+                    <button class="button" onclick="placeNumb('*')">x</button>
+                </div>
+
+                <div>
+                    <button class="button" onclick="placeNumb('4')">4</button>
+                    <button class="button" onclick="placeNumb('5')">5</button>
+                    <button class="button" onclick="placeNumb('6')">6</button>
+                    <button class="button" onclick="placeNumb('-')">-</button>
+                </div>
+
+                <div>
+                    <button class="button" onclick="placeNumb('1')">1</button>
+                    <button class="button" onclick="placeNumb('2')">2</button>
+                    <button class="button" onclick="placeNumb('3')">3</button>
+                    <button class="button" onclick="placeNumb('+')">+</button>
+                </div>
+
+                <div>
+                    <button class="button" onclick="placeNumb('0')">0</button>
+                    <button class="button" onclick="placeNumb('.')">.</button>
+                    <button class="resultbutton" onclick="finalresult()">=</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                Made by <a href="https://portfolio-168.web.app">Mohib Ismail</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

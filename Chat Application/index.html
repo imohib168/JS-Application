@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAn86bqtX1STlHq0yTGks0PN7hkysh4U7I",
+            authDomain: "chat-application-168.firebaseapp.com",
+            databaseURL: "https://chat-application-168.firebaseio.com",
+            projectId: "chat-application-168",
+            storageBucket: "chat-application-168.appspot.com",
+            messagingSenderId: "732469406670",
+            appId: "1:732469406670:web:393b0613af67fee55f599f",
+            measurementId: "G-8BMTZD6K2X"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="signup">
+            <h1 class="main-head">Chat Application</h1>
+            <h3 class="main-head-1">Create Account</h3>
+
+            <div class="inp-data">
+                <div class="userEmail">
+                    <label for="userEmail">Email:</label>   
+                    <input type="email" name="UserEmail" id="email" autocomplete="off">
+                </div>
+
+                <div class="userPass">
+                    <label for="userPassword">Password:</label>
+                    <input type="password" name="UserPassword" id="password">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btnEmail" onclick="signup()">Signup with Email</button>
+                <button type="button" class="btnFb" onclick="signupWithFacebook()">Signup with Facebook</button>
+                <button type="button" class="btnGmail" onclick="signupWithGoogle()">Signup with Google</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

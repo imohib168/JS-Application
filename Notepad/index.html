@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Notepad</h1>
+
+    <div class="setup">
+
+        <div class="tools">
+            <select class="fonts" onChange="changeFont(this)">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Helvatica">Helvatica</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Garamond">Garamond</option>
+                <option value="Impact">Impact</option>
+            </select>
+
+            <select class="size" onChange="changeSize(this)">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+            </select>
+
+            <button onClick="bold()" type="button" value="Bold">Bold</button>
+            <button onClick="italic()" type="button" value="Italic">Italic</button>
+            <button onClick="underline()" type="button" value="Underline">Underline</button>
+        </div>
+
+        <textarea cols="100" rows="20" id="content" placeholder="Enter your text here..."></textarea>
+
+        <div class="resetAndClear">
+            <button onClick="remove()" type="reset">Clear</button>
+            <button onClick="reset()" type="button">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calc.png">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+
+    
+    <div id="container">
+        <h1>TIP CALCULATOR</h1>
+
+        <div id="calculator">
+            <form>
+                <label for="billAmount">How much was your Bill? </label>
+                <br>
+                <input type="text" name="BillAmount" id="billAmount" placeholder="Type Bill Amount here...">
+
+                <br>
+                <hr style="margin-bottom: 35px;">
+
+                <label for="service">How was your service? </label>
+                <br>
+                <select name="ServiceQuality" id="service">
+                    <option disabled selected value="0">-- Choose an Option --</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - Ok</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </form>
+
+            <hr style="margin-bottom: 35px;">
+
+            <label for="sharingBill">How many people are sharing the bill? </label>
+            <br>
+            <input type="text" name="SharingBillAmount" id="sharingBill" placeholder="Number of people... ">
+
+            <br>
+            <hr style="margin-bottom: 20px;">
+            
+            <a href="#totalTip"><button type="button" id="calculate">Calculate!</button></a>
+            
+            
+            <div id="totalTip">
+                <p id="tip">Rs. 00.0</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Made by <a href="https://portfolio-168.web.app">Mohib Ismail</a>
+        </div>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,135 @@
+body {
+    background-color: #eabfcb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2000' height='2000' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='88' y1='88' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23836b72'/%3E%3Cstop offset='1' stop-color='%23d0aab5'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='75' y1='76' x2='168' y2='160'%3E%3Cstop offset='0' stop-color='%236c515a'/%3E%3Cstop offset='0.09' stop-color='%23876671'/%3E%3Cstop offset='0.18' stop-color='%2398737f'/%3E%3Cstop offset='0.31' stop-color='%23a67d8a'/%3E%3Cstop offset='0.44' stop-color='%23b08493'/%3E%3Cstop offset='0.59' stop-color='%23b78a99'/%3E%3Cstop offset='0.75' stop-color='%23bd8e9e'/%3E%3Cstop offset='1' stop-color='%23c191a1'/%3E%3C/linearGradient%3E%3Cfilter id='c' x='0' y='0' width='200%25' height='200%25'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='12' /%3E%3C/filter%3E%3C/defs%3E%3Cpolygon fill='url(%23a)' points='0 174 0 0 174 0'/%3E%3Cpath fill='%23000' filter='url(%23c)' d='M121.8 174C59.2 153.1 0 174 0 174s63.5-73.8 87-94c24.4-20.9 87-80 87-80S107.9 104.4 121.8 174z'/%3E%3Cpath fill='url(%23b)' d='M142.7 142.7C59.2 142.7 0 174 0 174s42-66.3 74.9-99.3S174 0 174 0S142.7 62.6 142.7 142.7z'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*  */
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    max-width: 100wh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-head {
+    margin: 0px 0px 35px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2F004F;
+    text-align: center;
+}
+
+.main-head-1 {
+    margin: 0px 0px 25px 0px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(44, 43, 43);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.inp-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.userEmail {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    border: none;
+    font-size: 19px;
+}
+
+.userPass {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    border: none;
+    font-size: 19px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    padding: 5px 3px;
+    margin: 8px 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.signup {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    min-width: 350px;
+    min-height: 460px;
+    color: black;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.btnEmail {
+    margin: 8px 0px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #CEF9F2;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.btnFb {
+    margin: 8px 0px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #CEF9F2;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(112, 112, 250);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.btnGmail {
+    margin: 8px 0px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #CEF9F2;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: #DB4437;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+}

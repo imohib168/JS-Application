@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8931b46d85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Images/todo.png">
+    <title>To-Do</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="main-heading">To-Do Application</h1>
+        <div class="top">
+            <input type="text" name="todo" id="toDoItem" placeholder="Enter Task..." maxlength="25">
+            <i class="fas fa-plus-circle" onclick="AddItem()"></i>
+            <i onclick="DelAll()" class="fas fa-trash"></i>
+        </div>
+
+        <div class="container1">
+            <div class="showList">
+                <ol id="toDoList">
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        Made by <a href="https://portfolio-168.web.app">Mohib Ismail</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
